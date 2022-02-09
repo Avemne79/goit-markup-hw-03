@@ -25,7 +25,12 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-color);
 }
-
+/* свойства контейнера */
+.container {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  background-color: tomato;
+}
 /* верхняя линия */
 /* логотип */
 .webstudio-link {
