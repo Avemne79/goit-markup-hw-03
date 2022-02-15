@@ -183,6 +183,9 @@ img {
 }
 
 /* особенности */
+.features-header {
+  visibility: hidden;
+}
 .features-list {
   display: flex;
 }
@@ -264,6 +267,10 @@ img {
 
   border: 0;
   border-radius: 4px;
+}
+/* заголовок портфолио */
+.header-projects {
+  visibility: hidden;
 }
 /* свойства кнопки primary */
 .button.primary {
