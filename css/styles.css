@@ -33,19 +33,6 @@ body {
   background-color: var(--primary-color);
 }
 
-/* убираю точки в li 
-.features-list,
-.what-we-do-list,
-.our-team,
-.navigation-list,
-.contacts-list,
-.buttons,
-.projects-list,
-.footer-contacts {
-  list-style-type: none;
-}
-*/
-
 /* сброс стилей по селектору */
 h1,
 h2,
@@ -78,6 +65,7 @@ ul {
 /* верхняя линия, навигация */
 .flex {
   display: flex;
+  border: 1px solid #ececec;
 }
 .navigation {
   display: flex;
@@ -107,6 +95,7 @@ ul {
 .navigation-list {
   display: flex;
   width: 294px;
+  margin-bottom: 0;
 }
 .navigation-list :not(:last-child) {
   margin-right: 50px;
@@ -173,11 +162,13 @@ ul {
   background-color: var(--footer-bg-color);
 }
 .solutions {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 200;
   text-align: center;
 }
 .header-solutions {
-  padding-top: 106px;
-
+  padding-top: 200px;
   padding-left: 250px;
   padding-right: 250px;
   margin-bottom: 30px;
@@ -193,7 +184,7 @@ ul {
 }
 /* кнопка шапки */
 .button.solution {
-  margin-bottom: 106px;
+  margin-bottom: 200px;
 
   font-weight: 700;
   font-size: 16px;
@@ -255,6 +246,9 @@ ul {
 }
 
 /* наша команда */
+.no-padding {
+  padding: 0;
+}
 .team {
   background-color: var(--buttons-bg-color);
 }
@@ -366,17 +360,30 @@ ul {
 .project-link {
   text-decoration: none;
 }
+
 /* футер */
+
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
   background: var(--footer-bg-color);
+}
+.logo-footer {
+  margin-bottom: 20px;
+  padding: 0;
 }
 .studio-footer {
   color: var(--primary-color);
 }
+.footer-contacts :not(:last-child) {
+  padding-bottom: 9px;
+}
+
 /* адрес из футера */
 .address-link {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -385,8 +392,22 @@ ul {
   color: var(--primary-color);
 }
 .color {
+  padding-top: 0;
+  padding-bottom: 0;
+
   font-weight: 400;
   line-height: 1.7;
   text-align: left;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* 
+position: absolute;
+width: 1600px;
+height: 252px;
+left: 0px;
+top: 2097px;
+
+background: #2F303A;
+*/
